@@ -91,8 +91,12 @@ nav a:hover {
   text-align: right;
   word-spacing: 9999999px;
   margin-top: -5px;
-  border-right: solid 3px;
-  border-color: black;
+}
+
+.column-sm::after{
+  content:'';
+  border-right: solid black 3px;
+  padding-left: 5px;
 }
 
 
@@ -108,11 +112,91 @@ p {
   display: block;
   margin-block-start: 1em;
   margin-block-end: 1em;
-  margin-inline-start: 0px;
-  margin-inline-end: 0px;
   float: right;
 
 }
+
+.first-app {
+  width:800px;
+  height: 600px;
+  border: solid red 5px;
+ transition: opacity 1s;
+}
+
+.first-app:hover {
+ opacity:  0.5;
+}
+
+.first-app-container {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+
+.first-app-text {
+  position: absolute;
+  bottom: 20px;
+  left: 16px;
+}
+
+.second-app {
+  width:397.8px;
+  height: 200px;
+  border: solid red 5px;
+ transition: opacity 1s;
+}
+
+.second-app:hover {
+ opacity:  0.5;
+}
+
+.app-container {
+  position: relative;
+
+  text-align: center;
+  color: white;
+}
+
+.second-app-text {
+  position: absolute;
+  bottom: 20px;
+  left: 16px;
+}
+
+.third-app {
+  width:397.8px;
+  height: 200px;
+  border: solid red 5px;
+ transition: opacity 1s;
+}
+
+.third-app:hover {
+ opacity:  0.5;
+}
+
+.fourth-app {
+  width:397.8px;
+  height: 200px;
+  border: solid red 5px;
+ transition: opacity 1s;
+}
+
+.fourth-app:hover {
+ opacity:  0.5;
+}
+
+.fifth-app {
+  width:397.8px;
+  height: 200px;
+  border: solid red 5px;
+ transition: opacity 1s;
+}
+
+.fifth-app:hover {
+ opacity:  0.5;
+}
+
+
 
 
 
@@ -136,8 +220,12 @@ p {
     justify-content: center;
     flex-basis: 100%;
     width: 100%;
-    border-right: none;
+    
     word-spacing: 0px;
+  }
+
+  .column-sm::after {
+    border: none;
   }
 
   .column-lg {
