@@ -68,7 +68,7 @@ nav a:hover {
 }
 
 .row {
-  flex-basis: 75%;
+  /* flex-basis: 75%; */
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -116,6 +116,10 @@ p {
 
 }
 
+.brady{
+  width: 75%;
+}
+
 .first-app {
   width:800px;
   height: 600px;
@@ -131,17 +135,22 @@ p {
   position: relative;
   text-align: center;
   color: white;
+  border: solid black 5px;
+  width: 100%;
+  height: 100%;
+  display: flex;
 }
 
 .first-app-text {
   position: absolute;
   bottom: 20px;
   left: 16px;
+  color: black;
 }
 
 .second-app {
-  width:397.8px;
-  height: 200px;
+  width:75%;
+  height: 65%;
   border: solid red 5px;
  transition: opacity 1s;
 }
@@ -151,16 +160,23 @@ p {
 }
 
 .app-container {
-  position: relative;
-
+  /* position: relative; */
+width: 50%;
   text-align: center;
   color: white;
+  border: solid black 5px;
+}
+
+.app-row {
+  display: flex;
+  justify-content: space-between;
 }
 
 .second-app-text {
   position: absolute;
   bottom: 20px;
   left: 16px;
+  color: black;
 }
 
 .third-app {
