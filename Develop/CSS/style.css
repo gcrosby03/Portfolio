@@ -147,10 +147,8 @@ p {
 }
 
 .first-app-text {
-  position: absolute;
-  bottom: 20px;
-  left: 16px;
-  color: black;
+ 
+  color: white;
 }
 
 .second-app {
@@ -184,11 +182,15 @@ p {
   height: 10em;
 }
 
+.app-row a {
+  display: contents;
+  width: 100%;
+}
+
 .second-app-text {
-  position: absolute;
-  bottom: 20px;
-  left: 16px;
-  color: black;
+  
+  
+  color: white;
 }
 
 .third-app {
