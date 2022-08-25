@@ -9,8 +9,9 @@ header {
   justify-content: space-between;
   align-items: center;
   padding: 1%;
-  background-color: slategray;
+  background-color: #4e4e4e;
   color: white;
+  box-shadow: 0px 5px 5px #232323;
 }
 
 .title {
@@ -23,10 +24,10 @@ header {
 }
 
 .hero {
-  height: 200px;
+  height: 250px;
   width: 100%;
   margin-bottom: 25px;
-  background-image: url("../../Assets/banner.png");
+  background-image: url("../../Assets/pexels-eberhard-grossgasteiger-1287075.jpg");
   background-size: cover;
   background-position: center;
 }
@@ -51,6 +52,7 @@ nav ul {
   display: flex;
   justify-content: space-between;
   min-width: 300px;
+  gap: 2em;
 
 }
 
@@ -60,11 +62,12 @@ nav a {
   font-weight: bold;
   text-decoration: none;
   font-size: 17px;
-  border-bottom: solid 3px black;
+ 
 }
 
 nav a:hover {
   color: black;
+  border-bottom: solid 3px black;
 }
 
 .row {
@@ -80,6 +83,30 @@ nav a:hover {
   font-size: 40px;
 
 }
+.column-about {
+  display: flex;
+  flex-direction: row;
+  flex-basis: 50%;
+}
+
+.column-avatar {
+  display: flex;
+  flex-direction: row;
+  flex-basis: 25%;
+padding-left: 15px;
+}
+
+.column-avatar img{
+  vertical-align: middle;
+  width: 225px;
+  height: 225px;
+  border-radius: 50%;
+  overflow: hidden;
+  position: relative;
+  object-fit: cover;
+}
+
+
 
 .column-sm {
   display: flex;
@@ -139,11 +166,11 @@ p {
 .first-app-container {
   display: flex;
   height: 35em;
-  background-image: url('../../Assets/background.jpg');
+  background-image: url('../../Assets/pexels-antonio-batinić-4164418.jpg');
   background-repeat: no-repeat;
   background-size: cover;
   border: 5px black solid;
-
+border-radius: 1%;
 }
 
 .first-app-text {
@@ -163,7 +190,7 @@ p {
 }
 
 .app-container {
-  /* position: relative; */
+  
   display: flex;
   width: 50%;
   height: 100%;
@@ -173,6 +200,7 @@ p {
   background-image: url('../../Assets/background.jpg');
   background-repeat: no-repeat;
   background-size: cover;
+  
 }
 
 .app-row {
@@ -224,6 +252,32 @@ p {
 
 .fifth-app:hover {
  opacity:  0.5;
+}
+
+.contact {
+  width: 75%;
+  display: flex;
+  flex-direction: column;
+ padding: 39px;
+}
+
+.contact ul {
+  display: flex;
+  justify-content: space-between;
+  min-width: 300px;
+
+}
+.contact a {
+  
+  color: black;
+  font-weight: bold;
+  text-decoration: none;
+  font-size: 20px;
+  border-bottom: solid 3px black;
+}
+
+.contact:hover {
+  color: black;
 }
 
 
