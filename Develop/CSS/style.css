@@ -2,6 +2,7 @@ body {
   display: flex;
   flex-direction: column;
   line-height: 1.3;
+  background-color: 	#8f9082;
 }
 
 header {
@@ -13,6 +14,7 @@ header {
   color: white;
   box-shadow: 0px 5px 5px #232323;
 }
+a{text-decoration: none;}
 
 .title {
   display: flex;
@@ -81,12 +83,16 @@ nav a:hover {
 .container-heading {
   /* float: right; */
   font-size: 40px;
+  color:	#dfd4c2;
 
 }
 .column-about {
   display: flex;
   flex-direction: row;
   flex-basis: 50%;
+  margin-top: auto;
+  margin-bottom: auto;
+  vertical-align: auto;
 }
 
 .column-avatar {
@@ -123,7 +129,7 @@ padding-left: 15px;
 
 .column-sm::after{
   content:'';
-  border-right: solid black 3px;
+  border-right: solid 	#dfd4c2 3px;
   padding-left: 15px;
 }
 
@@ -141,6 +147,8 @@ p {
   margin-block-start: 1em;
   margin-block-end: 1em;
   float: right;
+  font-size: 16px;
+  font-weight: 500;
 
 }
 
@@ -152,14 +160,11 @@ p {
   padding-left: 15px;
 }
 
-.first-app {
-  width:800px;
-  height: 600px;
-  border: solid red 5px;
+.first-app-container {
  transition: opacity 1s;
 }
 
-.first-app:hover {
+.first-app-container:hover {
  opacity:  0.5;
 }
 
@@ -169,24 +174,53 @@ p {
   background-image: url('../../Assets/pexels-antonio-batinić-4164418.jpg');
   background-repeat: no-repeat;
   background-size: cover;
-  border: 5px black solid;
+  border: 5px #232323 solid;
 border-radius: 1%;
+
+
 }
 
 .first-app-text {
- 
+ vertical-align: middle;
+ margin-top: auto;
+ margin-bottom: auto;
   color: white;
+  font-size: 48px;
+  font-weight: 700;
+  text-transform: uppercase;
+  padding-left: 25px;
+  
+ 
+  
+}
+
+.image-overlay{
+  background: rgba(0, 0, 0, 1);
+  overflow: hidden;
+  
+  height: 100%;
 }
 
 .second-app {
-  width:75%;
-  height: 65%;
-  border: solid red 5px;
+ background-image: url('../../Assets/drift.jpg');
  transition: opacity 1s;
+ 
 }
 
 .second-app:hover {
  opacity:  0.5;
+}
+
+.app-text{
+  vertical-align: middle;
+  margin-top: auto;
+  margin-bottom: auto;
+   color: white;
+   font-size: 28px;
+   font-weight: 700;
+   text-transform: uppercase;
+   padding-left: 25px;
+   
 }
 
 .app-container {
@@ -196,8 +230,7 @@ border-radius: 1%;
   height: 100%;
   text-align: center;
   color: white;
-  border: solid black 5px;
-  background-image: url('../../Assets/background.jpg');
+  border: #232323 solid 5px;
   background-repeat: no-repeat;
   background-size: cover;
   
@@ -222,9 +255,8 @@ border-radius: 1%;
 }
 
 .third-app {
-  width:397.8px;
-  height: 200px;
-  border: solid red 5px;
+  background-image: url('../../Assets/aeroplane.jpg');
+  
  transition: opacity 1s;
 }
 
@@ -233,10 +265,9 @@ border-radius: 1%;
 }
 
 .fourth-app {
-  width:397.8px;
-  height: 200px;
-  border: solid red 5px;
- transition: opacity 1s;
+  background-image: url('../../Assets/range.jpg');
+  transition: opacity 1s;
+
 }
 
 .fourth-app:hover {
@@ -244,10 +275,8 @@ border-radius: 1%;
 }
 
 .fifth-app {
-  width:397.8px;
-  height: 200px;
-  border: solid red 5px;
- transition: opacity 1s;
+  background-image: url('../../Assets/lightbulb.jpg');
+  transition: opacity 1s; 
 }
 
 .fifth-app:hover {
@@ -269,11 +298,11 @@ border-radius: 1%;
 }
 .contact a {
   
-  color: black;
+  color: #232323;
   font-weight: bold;
   text-decoration: none;
   font-size: 20px;
-  border-bottom: solid 3px black;
+  
 }
 
 .contact:hover {
@@ -286,7 +315,7 @@ border-radius: 1%;
 
 
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1050px) {
   header {
     flex-direction: column;
   }
@@ -299,6 +328,10 @@ border-radius: 1%;
     flex-direction: column;
 
   }
+  .first-app-text, .app-text{
+  padding-left: none;
+}
+
 
   .column-sm {
     justify-content: center;
@@ -310,14 +343,19 @@ border-radius: 1%;
 
   .column-sm::after {
     border: none;
+    padding-left: 0;
   }
 
-  .column-lg {
+  .column-lg,.contact,.container-heading,.column-avatar, .column-about,.brady {
     flex-basis: 100%;
     width: 100%;
     text-align: center;
+    justify-content: center;
+    padding-left: 0;
 
   }
+
+
 
   .subtitle {
     justify-content: center;
